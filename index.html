@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/bootstrap.css">
+    <script src="assets/bootstrap.js"></script>
+    
+
+    <script type="text/javascript">
+
+        count = () =>{
+        // mengambil nilai dari elemen (get value)
+        let panjang = document.getElementById('panjang').value;
+        let lebar = document.getElementById('lebar').value;
+        let hasil = panjang * lebar;
+       
+        // menentukan nilai pada elemen (set value)
+        document.getElementById('hasil').value = hasil;
+        }
+        </script>
+        </head>
+    <body">
+        <center>
+            <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+            <div class="container" >
+                <div class="card col-sm-5" >
+                    <span class="border border-5"></span>
+                <div class="card-header" style="background-color: rgb(23, 188, 229);">
+                <h4>Hitung Luas Persegi Panjang</h4>
+                </div>
+                <div class="card-body">
+                Panjang
+                <input type="number" id="panjang" class="form-control">
+                Lebar
+                <input type="number" id="lebar" class="form-control">
+                <button type="button" class="btn btn-info btn-block"
+                onclick="count()">
+                Hitung  
+                </button>
+
+                Hasil
+                <input type="text" id="hasil" class="form-control"
+               readonly>
+                    </div>
+                 </div>
+                </div>
+            </div>
+        </div>
+        </center>
+        
+</body>
+</html> 
